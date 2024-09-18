@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Oswald:wght@400&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    color: #FFD700; /* Dorado antiguo */
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF; /* Blanco */
+}
+
+body {
+    height: 100vh; /*establece la altura del elemento al 100% de la altura de la ventana del navegador*/
+    box-sizing: border-box; /*padding y el borde en el cálculo del ancho y la altura del elemento, evitando que estos lo aumenten.*/
+    background-color: #2E2E2E;/*color de fondo*/
+    color: #FFD700; /*color de letra*/
+}
+
+.header { /*relleno alrededor del contenido que esta dentro del elemento header*/
+padding: 2% 0% 0% 15%; /*2% en la parte superior 0% en la derecha 0% en la parte inferior 15% en la izquierda*/
+}
+
+.header_nav {
+    display: flex; /*organiza los elementos hijos en una fila */
+    gap: 80px;/*establece un espacio entre los elementos hijos y funciona cuando llamamos al flexbox*/ 
+      
+}
+.header_nav_a {
+    font-family: 'Cinzel', serif;   /*Fuente de las letras*/
+    font-size: 24px; /*Tamaño de fuente*/
+    font-weight: 600; /*grosor de letra, seminegrita*/
+    color: #FFD700; /*Color de letra*/
+    text-decoration: none; /*Quita el subrayado*/
+
+}
+
+
+.main {
+    padding: 6% 15%;
+    display: flex; /*Organiza los elementos hijos en una fila*/
+    align-items: center; /*centra los elementos hijos verticalmente dentro de su contenedor.*/
+    justify-content: space-between; /*distribuye los elementos hijos horizontalmente con el máximo espacio posible entre ellos.*/
+    gap: 82px; /* establece un espacio entre los elementos hijos y funciona cuando el display es flebox*/
+}
+
+.main_section {
+    width: 615px; /*ancho del contenedor main*/
+    display: flex; /*Organiza los elementos hijos en filas*/
+    flex-direction: column; /*Se utiliza cuando el contenedor es de flexbox y esto hace que los elementos se agrupen en columnas, uno abajo de otro*/
+    gap: 40px;  /*establece un espacio entre los elementos hijos*/
+}
+
+.main_Section_h1 {
+    font-size: 36px; /*tamaño de letra*/
+    font-family:'Cinzel', serif ; /*tipo de letra*/
+}
+
+.main_section_p {
+    font-size: 24px; /*tamaño de fuente*/
+    font-family: 'Cinzel', serif ; /*tipo de letra*/
+}
+
+.main_div {
+    display: flex; /*es un contenedor flexbox*/
+    flex-direction: column; /*al ser un contenedor flexbox acomoda los elementos en columnas uno abajo del otro*/
+    justify-content: space-between; /*distribuye los elementos hijo horizontalmente con un espacio uniforme entre ellos*/
+    align-items: center; /*Acomoda los elementos en el centro del contenedor verticalmente*/
+    gap: 32px;/*Establece un espacio entre los elementos*/
+}
+
+.main_div_h2 {
+    font-family: 'Cinzel', serif ; /*tipo de letra*/
+    font-weight: 400; /*Grosor de la letra*/
+    font-size: 24px; /*tamaño de la letra*/
+}
+
+.main_div_a {
+    display: flex; /*declara que el contenedor es flexbox*/
+    justify-content: center;/*distribuye los elementos horizontal en un espacio uniforme entre ellos*/
+    gap: 16px; /*espacio entre los elementos*/
+    border: 2px solid #FFD700; /*va el grosor del borde, solid es el tipo de borde y lo ultimo es el color del borde*/
+    width: 50%; /*esto signifca que  el ancho de este elemento se ajustara al ancho del contenedor padre*/
+    text-align: center; /*Alinia el texto de su contenedor en el centro*/
+    border-radius: 8px; /*Redondea las esquinas del elemento*/
+    font-size: 24px; /*tama;o de letra*/
+    font-weight: 600; /*grosor de la letra*/
+    padding: 21.5px 0; /*el primer dato es arriba y abajo y el otro es al derecho y izquierdo*/
+    color: #FFD700; /*Color de letra*/
+    font-family: 'Cinzel', serif; /*Tipo de letra*/
+    text-decoration: none; /*Quita el subrayado*/
+}
+
+.main_div_a:hover {
+background-color: #001F3F;
+}
+
+.main_img {
+    width: 50% ;
+}
+
+.footer {
+    padding: 24px;
+    text-align: center; /*Alinea el texto al centro*/
+    font-size: 20px; /*tamaño de la letra*/
+    font-weight: 400;
+}
