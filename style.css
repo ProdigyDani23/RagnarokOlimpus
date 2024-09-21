@@ -1,14 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Oswald:wght@400&display=swap');
 
+@media (max-width: 768px) {
+    /* Aquí pones todas las reglas para móviles */
+    .header {
+        padding: 2% 5%;
+    }
+
+    .header_logo {
+        width: 80px;
+    }
+
+    .header_nav_a {
+        font-size: 18px;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 6% 5%;
+    }
+
+    .main_section {
+        width: 100%;
+    }
+
+    .main_div_a {
+        width: 80%;
+    }
+
+    .main_img {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 12px;
+    }
+}
+
+
 * {
     padding: 0;
     margin:0;
 }
 
-h1 {
-    font-family: 'Cinzel', serif;
-    color: #FFD700; /* Dorado antiguo */
-}
+
 
 p {
     font-family: 'Oswald', sans-serif;
@@ -23,21 +57,44 @@ body {
 }
 
 .header { /*relleno alrededor del contenido que esta dentro del elemento header*/
-padding: 2% 0% 0% 15%; /*2% en la parte superior 0% en la derecha 0% en la parte inferior 15% en la izquierda*/
+padding: 2% 15%; /*2% en la parte superior y inferior 15% en la izquierda y derecha*/
+background-color: #001F3F; /*Color de fondo de todo el encabezado*/
 }
+
+.header_logo {
+    width: 100px; /* Ajusta el ancho a 100 píxeles */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 20px;
+}
+
+.header_title {
+display: flex; /*el elemento title es un flexbox*/
+flex-direction: column; /*Alinea el titulo en columna*/
+font-family: 'Cinzel', serif; 
+}
+
 
 .header_nav {
     display: flex; /*organiza los elementos hijos en una fila */
-    gap: 80px;/*establece un espacio entre los elementos hijos y funciona cuando llamamos al flexbox*/ 
+    align-items: center;  /*centra todos los elementos de manera vertical*/
+    justify-content: space-between;  /*HAce un espacio entre los elementos*/
+   
       
 }
+
+
+
 .header_nav_a {
     font-family: 'Cinzel', serif;   /*Fuente de las letras*/
     font-size: 24px; /*Tamaño de fuente*/
     font-weight: 600; /*grosor de letra, seminegrita*/
     color: #FFD700; /*Color de letra*/
     text-decoration: none; /*Quita el subrayado*/
+}
 
+.header_nav_a:hover {
+    color: #FFFFFF; /*Color al momento de pasar el cursor*/
+    text-decoration: underline;/*subraya para resaltar el enlace*/
 }
 
 
@@ -57,14 +114,16 @@ padding: 2% 0% 0% 15%; /*2% en la parte superior 0% en la derecha 0% en la parte
 }
 
 .main_Section_h1 {
-    font-size: 36px; /*tamaño de letra*/
+    font-size: 3v; /*tamaño de letra*/
     font-family:'Cinzel', serif ; /*tipo de letra*/
 }
 
 .main_section_p {
     font-size: 24px; /*tamaño de fuente*/
-    font-family: 'Cinzel', serif ; /*tipo de letra*/
+    font-family: 'Oswald', sans-serif ; /*tipo de letra*/
 }
+
+
 
 .main_div {
     display: flex; /*es un contenedor flexbox*/
@@ -97,7 +156,10 @@ padding: 2% 0% 0% 15%; /*2% en la parte superior 0% en la derecha 0% en la parte
 }
 
 .main_div_a:hover {
-background-color: #001F3F;
+background-color: #FFD700;
+color: #001F3F;
+transform: scale(1.05);/*Aumenta ligeramente el tamaño del boton*/
+
 }
 
 .main_img {
