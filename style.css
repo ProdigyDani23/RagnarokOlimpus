@@ -33,6 +33,7 @@ background-color: #001F3F; /*Color de fondo de todo el encabezado*/
 display: flex; /*el elemento title es un flexbox*/
 flex-direction: column; /*Alinea el titulo en columna*/
 font-family: 'Cinzel', serif; 
+color:  #FFD700 ;
 }
 
 .header_nav {
@@ -106,14 +107,14 @@ font-family: 'Cinzel', serif;
     font-size: 24px; /*tama;o de letra*/
     font-weight: 600; /*grosor de la letra*/
     padding: 21.5px 0; /*el primer dato es arriba y abajo y el otro es al derecho y izquierdo*/
-    color: #FFD700; /*Color de letra*/
+    color: #0071e2; /*Color de letra*/
     font-family: 'Cinzel', serif; /*Tipo de letra*/
     text-decoration: none; /*Quita el subrayado*/
 }
 
 .main_div_a:hover {
 background-color: #FFD700;
-color: #001F3F;
+color: #585858;
 transform: scale(1.05);/*Aumenta ligeramente el tamaño del boton*/
 
 }
@@ -131,27 +132,102 @@ transform: scale(1.05);/*Aumenta ligeramente el tamaño del boton*/
 
 /*Personalizando misRutinas.html*/
 
+.routine_header {
+    padding: 2% 15%; /*2% en la parte superior y inferior 15% en la izquierda y derecha*/
+    background-color: #001F3F; /*Color de fondo de todo el encabezado*/
+}
 
+.routine_header_nav {
+    display: flex; /*organiza los elementos hijos en una fila */
+    align-items: center;  /*centra todos los elementos de manera vertical*/
+    justify-content: space-between;  /*HAce un espacio entre los elementos*/  
+}
 
-.header_h1 {
+.routine_header_h1 {
+    font-size: 3v; /*tamaño de letra*/
+    font-family:'Cinzel', serif ; /*tipo de letra*/
+}
+
+.routine_header_nav_a {
+    font-family: 'Cinzel', serif;   /*Fuente de las letras*/
+    font-size: 24px; /*Tamaño de fuente*/
+    font-weight: 600; /*grosor de letra, seminegrita*/
+    color: #FFD700; /*Color de letra*/
+    text-decoration: none; /*Quita el subrayado*/
+}
+
+.routine_header_nav_a:hover {
+    color: #FFFFFF; /*Color al momento de pasar el cursor*/
+    text-decoration: underline;/*subraya para resaltar el enlace*/
+}
+
+.routine_main {
+     padding: 1% 15%;
+    display: flex; /*Organiza los elementos hijos en una fila*/
+    align-items: flex-start; /*centra los elementos hijos verticalmente dentro de su contenedor.*/
+    justify-content: space-between; /*distribuye los elementos hijos horizontalmente con el máximo espacio posible entre ellos.*/
+    gap: 82px; /* establece un espacio entre los elementos hijos y funciona cuando el display es flebox*/
+}
+
+.routine_main_section {
+    width: 615px; /*ancho del contenedor main*/
+    display: flex; /*Organiza los elementos hijos en filas*/
+    flex-direction: column; /*Se utiliza cuando el contenedor es de flexbox y esto hace que los elementos se agrupen en columnas, uno abajo de otro*/
+    gap: 40px;  /*establece un espacio entre los elementos hijos*/
+}
+
+.routine_main_section_div_h2 {
+    font-size: 3v; /*tamaño de letra*/
+    font-family:'Cinzel', serif ; /*tipo de letra*/
+}
+
+.routine_main_section_div_p {
+    font-size: 24px; /*tamaño de fuente*/
+    font-family: 'Oswald', sans-serif ; /*tipo de letra*/
+}
+
+/*Personalizacion de rutinas*/
+
+/* Estilos para el acordeón */
+/* Estilos para el acordeón */
+.accordion {
+    width: 80%; /* Ajusta el ancho del acordeón según sea necesario */
+    margin: 0 auto; /* Centra el acordeón horizontalmente */
+  }
+  
+  .accordion-item {
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .accordion-button {
+    background-color: #2E2E2E;
+    color: #0071e2;
     font-family: 'Cinzel', serif;
-    color: #FFD700;
-}
+    font-size: 18px;
+    padding: 1rem 1.5rem;
+    text-align: left;
+  }
+  
+  .accordion-button:hover {
+    background-color: #FFD700;
+  }
+  
+  .accordion-body {
+    padding: 1rem;
+    background-color: #f5f5f5;
+  }
+  
+  /* Estilos adicionales para los elementos dentro del acordeón */
+  .accordion_h3 {
+    font-weight: bold;
+  }
+  
+  .accordion_lunes {
+    color: #0071e2; /* Color para destacar los días */
+  }
 
-.header_a {
-    font-family: 'Cinzel', serif;
-    color: #FFD700;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 600; /*Grosor de la letra*/
-    text-align: right;
-}
-
-.main_section_div_h2 {
-    font-family: 'Cinzel', serif;
-}
-
-.main_section_div_p {
-font-family: 'Oswald', sans-serif;
-font-size: 24px;
-}
+  .exercise_1_h4 {
+    font-family: 'Oswald', sans-serif ; /*tipo de letra*/
+  }
