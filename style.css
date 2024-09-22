@@ -1,48 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Oswald:wght@400&display=swap');
 
-@media (max-width: 768px) {
-    /* Aquí pones todas las reglas para móviles */
-    .header {
-        padding: 2% 5%;
-    }
-
-    .header_logo {
-        width: 80px;
-    }
-
-    .header_nav_a {
-        font-size: 18px;
-    }
-
-    .main {
-        flex-direction: column;
-        padding: 6% 5%;
-    }
-
-    .main_section {
-        width: 100%;
-    }
-
-    .main_div_a {
-        width: 80%;
-    }
-
-    .main_img {
-        width: 100%;
-    }
-
-    .footer {
-        padding: 12px;
-    }
-}
-
-
+/*Personalizacion Index.html*/
 * {
     padding: 0;
     margin:0;
 }
-
-
 
 p {
     font-family: 'Oswald', sans-serif;
@@ -73,13 +35,10 @@ flex-direction: column; /*Alinea el titulo en columna*/
 font-family: 'Cinzel', serif; 
 }
 
-
 .header_nav {
     display: flex; /*organiza los elementos hijos en una fila */
     align-items: center;  /*centra todos los elementos de manera vertical*/
-    justify-content: space-between;  /*HAce un espacio entre los elementos*/
-   
-      
+    justify-content: space-between;  /*HAce un espacio entre los elementos*/     
 }
 
 
@@ -96,7 +55,6 @@ font-family: 'Cinzel', serif;
     color: #FFFFFF; /*Color al momento de pasar el cursor*/
     text-decoration: underline;/*subraya para resaltar el enlace*/
 }
-
 
 .main {
     padding: 6% 15%;
@@ -122,8 +80,6 @@ font-family: 'Cinzel', serif;
     font-size: 24px; /*tamaño de fuente*/
     font-family: 'Oswald', sans-serif ; /*tipo de letra*/
 }
-
-
 
 .main_div {
     display: flex; /*es un contenedor flexbox*/
@@ -171,4 +127,31 @@ transform: scale(1.05);/*Aumenta ligeramente el tamaño del boton*/
     text-align: center; /*Alinea el texto al centro*/
     font-size: 20px; /*tamaño de la letra*/
     font-weight: 400;
+}
+
+/*Personalizando misRutinas.html*/
+
+
+
+.header_h1 {
+    font-family: 'Cinzel', serif;
+    color: #FFD700;
+}
+
+.header_a {
+    font-family: 'Cinzel', serif;
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600; /*Grosor de la letra*/
+    text-align: right;
+}
+
+.main_section_div_h2 {
+    font-family: 'Cinzel', serif;
+}
+
+.main_section_div_p {
+font-family: 'Oswald', sans-serif;
+font-size: 24px;
 }
