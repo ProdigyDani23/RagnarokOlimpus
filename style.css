@@ -4,20 +4,28 @@
 
 body {
     font-family: 'Poppins' sans-serif;
-    background-color: #1a1a1a ;
+    background-color: #222 ;
     color: #f0f0f0;
     margin: 0; /*No hay margen*/
     padding: 0;/*No hay relleno*/
     }
+.header {
+    background-color: #0b3c5d;
+    padding: 10px; /*es el grueso de lborde*/
+    text-align: center;
+}
 .header_nav {
     background-color: #001f3f;
     display: flex; /* activa el modelo flexbox*/
     justify-content: space-between;/*distribuye el espacio entre los elementos hijos a lo largo del contenedor horizontalmente*/
     align-items: center; /*alinea los elementos hijo a lo largo en vertical*/
     padding: 15px; /*se añade 15 pixeles alrededor del contenido, creando un margen entre el borde del contenedor y sus elementos hijos*/
+    height: 50px /* este es el ancho del contenedor*/
 }
 .header_logo {
     width: 50px; /*fija el ancho del elemento a 50px*/
+    height: 50px; /* este es el ancho del contenedor*/
+    border-radius: 5px;
 }
 .header_nav_a {
     color : #f0f0f0;
@@ -32,7 +40,7 @@ body {
 .header_title{
     font-family: 'Cinzel', serif;
     color: #ffc107;
-    font-size: 36px; /*tipo de letra*/
+    font-size: 2.5rem;
 }
 .main_section {
     text-align: center; /*Alinea el texto en el centro*/
@@ -142,44 +150,3 @@ color: #f0f0f0;
 
 /* Estilos para el acordeón */
 /* Estilos para el acordeón */
-.accordion {
-    width: 80%; /* Ajusta el ancho del acordeón según sea necesario */
-    margin: 0 auto; /* Centra el acordeón horizontalmente */
-  }
-  
-  .accordion-item {
-    border: 1px solid #FFD700;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .accordion-button {
-    background-color: #2E2E2E;
-    color: #0071e2;
-    font-family: 'Cinzel', serif;
-    font-size: 18px;
-    padding: 1rem 1.5rem;
-    text-align: left;
-  }
-  
-  .accordion-button:hover {
-    background-color: #FFD700;
-  }
-  
-  .accordion-body {
-    padding: 1rem;
-    background-color: #f5f5f5;
-  }
-  
-  /* Estilos adicionales para los elementos dentro del acordeón */
-  .accordion_h3 {
-    font-weight: bold;
-  }
-  
-  .accordion_lunes {
-    color: #0071e2; /* Color para destacar los días */
-  }
-
-  .exercise_1_h4 {
-    font-family: 'Oswald', sans-serif ; /*tipo de letra*/
-  }
