@@ -1,135 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Oswald:wght@400&display=swap');
 
 /*Personalizacion Index.html*/
-* {
-    padding: 0;
-    margin:0;
-}
-
-p {
-    font-family: 'Oswald', sans-serif;
-    color: #FFFFFF; /* Blanco */
-}
 
 body {
-    height: 100vh; /*establece la altura del elemento al 100% de la altura de la ventana del navegador*/
-    box-sizing: border-box; /*padding y el borde en el cálculo del ancho y la altura del elemento, evitando que estos lo aumenten.*/
-    background-color: #2E2E2E;/*color de fondo*/
-    color: #FFD700; /*color de letra*/
-}
-
-.header { /*relleno alrededor del contenido que esta dentro del elemento header*/
-padding: 2% 15%; /*2% en la parte superior y inferior 15% en la izquierda y derecha*/
-background-color: #001F3F; /*Color de fondo de todo el encabezado*/
-}
-
-.header_logo {
-    width: 100px; /* Ajusta el ancho a 100 píxeles */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 20px;
-}
-
-.header_title {
-display: flex; /*el elemento title es un flexbox*/
-flex-direction: column; /*Alinea el titulo en columna*/
-font-family: 'Cinzel', serif; 
-color:  #FFD700 ;
-}
-
+    font-family: 'Poppins' sans-serif;
+    background-color: #1a1a1a ;
+    color: #f0f0f0;
+    margin: 0; /*No hay margen*/
+    padding: 0;/*No hay relleno*/
+    }
 .header_nav {
-    display: flex; /*organiza los elementos hijos en una fila */
-    align-items: center;  /*centra todos los elementos de manera vertical*/
-    justify-content: space-between;  /*HAce un espacio entre los elementos*/     
+    background-color: #001f3f;
+    display: flex; /* activa el modelo flexbox*/
+    justify-content: space-between;/*distribuye el espacio entre los elementos hijos a lo largo del contenedor horizontalmente*/
+    align-items: center; /*alinea los elementos hijo a lo largo en vertical*/
+    padding: 15px; /*se añade 15 pixeles alrededor del contenido, creando un margen entre el borde del contenedor y sus elementos hijos*/
 }
-
-
-
+.header_logo {
+    width: 50px; /*fija el ancho del elemento a 50px*/
+}
 .header_nav_a {
-    font-family: 'Cinzel', serif;   /*Fuente de las letras*/
-    font-size: 24px; /*Tamaño de fuente*/
-    font-weight: 600; /*grosor de letra, seminegrita*/
-    color: #FFD700; /*Color de letra*/
-    text-decoration: none; /*Quita el subrayado*/
+    color : #f0f0f0;
+    text-decoration: none;
+    margin: 0 15px; /*margen horizontal de 15px a la izquierda y derecha*/
+    font-weight: 600; /*fondo de la letra seminegrita*/
 }
-
 .header_nav_a:hover {
-    color: #FFFFFF; /*Color al momento de pasar el cursor*/
-    text-decoration: underline;/*subraya para resaltar el enlace*/
+    color: #ffc107;
+    transition: 0.3s;
 }
-
-.main {
-    padding: 6% 15%;
-    display: flex; /*Organiza los elementos hijos en una fila*/
-    align-items: center; /*centra los elementos hijos verticalmente dentro de su contenedor.*/
-    justify-content: space-between; /*distribuye los elementos hijos horizontalmente con el máximo espacio posible entre ellos.*/
-    gap: 82px; /* establece un espacio entre los elementos hijos y funciona cuando el display es flebox*/
+.header_title{
+    font-family: 'Cinzel', serif;
+    color: #ffc107;
+    font-size: 36px; /*tipo de letra*/
 }
-
 .main_section {
-    width: 615px; /*ancho del contenedor main*/
-    display: flex; /*Organiza los elementos hijos en filas*/
-    flex-direction: column; /*Se utiliza cuando el contenedor es de flexbox y esto hace que los elementos se agrupen en columnas, uno abajo de otro*/
-    gap: 40px;  /*establece un espacio entre los elementos hijos*/
+    text-align: center; /*Alinea el texto en el centro*/
+    padding: 60px; /*esos son los piceles al rededor del contenido, creando un margen entre el borde del contenedor y sus elementos hijos*/
 }
-
-.main_Section_h1 {
-    font-size: 3v; /*tamaño de letra*/
-    font-family:'Cinzel', serif ; /*tipo de letra*/
+.main_section_h1 {
+    font-family: 'Cinzel', serif ;
+    font-size: 48px; /*tamaño de letra*/
+    margin-bottom: 20px; /*establece un margen inferior de 20 pixeles*/
+    color: #ffc107;
 }
-
 .main_section_p {
-    font-size: 24px; /*tamaño de fuente*/
-    font-family: 'Oswald', sans-serif ; /*tipo de letra*/
+    font-size: 18px; /*tamaño de letra*/
+    margin-bottom: 40px; /*este es el margen inferior, quiere decir la distancia entre el elemento con el de abajo*/
+    color: #f0f0f0;
 }
-
 .main_div {
-    display: flex; /*es un contenedor flexbox*/
-    flex-direction: column; /*al ser un contenedor flexbox acomoda los elementos en columnas uno abajo del otro*/
-    justify-content: space-between; /*distribuye los elementos hijo horizontalmente con un espacio uniforme entre ellos*/
-    align-items: center; /*Acomoda los elementos en el centro del contenedor verticalmente*/
-    gap: 32px;/*Establece un espacio entre los elementos*/
+    display: flex; 
+    justify-content: center;/*distribuye el espacio entre los elementos hijos a lo largo del contenedor horizontalmente*/
+    gap: 15px; /*es la distancia horizontal de cada elemento*/
 }
-
-.main_div_h2 {
-    font-family: 'Cinzel', serif ; /*tipo de letra*/
-    font-weight: 400; /*Grosor de la letra*/
-    font-size: 24px; /*tamaño de la letra*/
-}
-
 .main_div_a {
-    display: flex; /*declara que el contenedor es flexbox*/
-    justify-content: center;/*distribuye los elementos horizontal en un espacio uniforme entre ellos*/
-    gap: 16px; /*espacio entre los elementos*/
-    border: 2px solid #FFD700; /*va el grosor del borde, solid es el tipo de borde y lo ultimo es el color del borde*/
-    width: 50%; /*esto signifca que  el ancho de este elemento se ajustara al ancho del contenedor padre*/
-    text-align: center; /*Alinia el texto de su contenedor en el centro*/
-    border-radius: 8px; /*Redondea las esquinas del elemento*/
-    font-size: 24px; /*tama;o de letra*/
+    background-color: #ffc107; /*color de fondo del enlace*/
+    color: #1a1a1a; /*color del texto del enlace*/
+    padding: 10px 20px; /*este es el tamaño del bordem 10 pixeles de arriba abajo y 20 pixeles de izquierda a derecha*/
+    border-radius: 5px; /*este es el borde del enlace, para que no se vea tan cuadrado*/
+    text-decoration: none; /*quita el subrayado a el enlace*/
     font-weight: 600; /*grosor de la letra*/
-    padding: 21.5px 0; /*el primer dato es arriba y abajo y el otro es al derecho y izquierdo*/
-    color: #0071e2; /*Color de letra*/
-    font-family: 'Cinzel', serif; /*Tipo de letra*/
-    text-decoration: none; /*Quita el subrayado*/
 }
-
 .main_div_a:hover {
-background-color: #FFD700;
-color: #585858;
-transform: scale(1.05);/*Aumenta ligeramente el tamaño del boton*/
-
+    background-color: #e0a800;
+    transition: 0.3s; /*el tiempo que demora en ver el color, se llama transicion*/
 }
-
 .main_img {
-    width: 50% ;
+    display: block; /*este elemento es un bloque*/
+    margin: 20px auto; /*acomoda el elemento, 40px es arriba y abajo y el auto es acomodarlo el derecho e izquierdo automatico*/
+    width: 100%; /*esto quiere decir que el ancho de esta imagen es 100% del ancho del contenedor padre*/
+    max-width: 600px; /*el ancho del elemento no puede exceder los 600 pixeles*/
+    border-radius: 10px;/*redondea el elemento*/
 }
-
 .footer {
-    padding: 24px;
-    text-align: center; /*Alinea el texto al centro*/
-    font-size: 20px; /*tamaño de la letra*/
-    font-weight: 400;
+    background-color: #001f3f;
+    padding: 20px; /*tamaño del contenedor */
+    text-align: center; /*pone los elemtos hijos en el centro*/
 }
-
+.footer p {
+margin: 0;
+color: #f0f0f0;
+}
 /*Personalizando misRutinas.html*/
 
 .routine_header {
