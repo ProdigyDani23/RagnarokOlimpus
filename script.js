@@ -68,6 +68,7 @@ const ejerciciosLunes = {
             link: "https://www.entrenamientos.com/ejercicios/estiramiento-de-flexores-de-cadera"
         }
     ]
+<<<<<<< HEAD
 }
 
 const ejerciciosMartes =  {
@@ -81,6 +82,84 @@ const ejerciciosMartes =  {
             link : "https://mundoentrenamiento.com/evidencias-sobre-el-salto-a-la-comba/"
         }]
 }
+=======
+};
+
+const ejerciciosMartes =  {
+    abdomen : 
+        [{
+            ejercicio : "Abs coaster",
+            series : 4,
+            repeticiones : 15 ,
+            peso : "Sin peso (Buscar manera de aumentar el peso)",
+            descanso: "45 segundos",
+            link : "https://fitnessprogramer.com/exercise/ab-coaster-machine/"
+        },
+        {
+            ejercicio :"Rueda Abdominal" ,
+            series : 4,
+            repeticiones : 15,
+            peso : "Sin peso",
+            descanso: "45 segundos",
+            link : "https://www.entrenamientos.com/ejercicios/abdominales-con-roller"
+        },
+        {
+            ejercicio :"Plancha Frontal" ,
+            series : 4,
+            repeticiones : "1 minuto",
+            peso : "Mi peso corporal",
+            descanso: "30 segundos",
+            link : "https://www.entrenamientos.com/ejercicios/plancha-con-apoyo-de-antebrazos"
+        },
+        {
+            ejercicio :"Plancha Lateral" ,
+            series : 4,
+            repeticiones : "45 segundos por lado",
+            peso : "Mi peso corporal",
+            descanso: "30 segundos ",
+            link : "https://www.entrenamientos.com/ejercicios/plancha-lateral-con-apoyo-de-antebrazo"
+        }
+    ],
+    flexibilidadLumbares: [
+        {
+            ejercicio:"Estiramiento del gato-camello",
+            series: 4,
+            repeticiones: "45 segundos",
+            peso : "Mi peso corporal",
+            descanso: "Sin descanso",
+            link : "https://www.cigna.com/es-us/knowledge-center/hw/gato-camello-abk4473"
+        },
+        {
+            ejercicio :"Flexión lumbar tumbado",
+            series :4,
+            repeticiones:"45 segundos",
+            peso : "Mi peso corporal",
+            descanso: "sin descanso",
+            link : "https://www.cigna.com/es-us/knowledge-center/hw/ejercicio-de-rodillas-al-pecho-sig44113"
+        }
+        
+    ],
+    estiramientosGenerales: [
+        {
+            ejercicio :"Estiramiento de la espalda baja en postura del niño",
+            series :3,
+            repeticiones :"1 minuto",
+            peso : "Mi peso corporal",
+            descanso: "sin descanso",
+            link : "https://www.mayoclinic.org/es/healthy-lifestyle/stress-management/multimedia/childs-pose/vid-20453580"
+        },
+       { ejercicio :"Estiramiento de caderas y glúteos",
+        series :3,
+        repeticiones :"45 segundos",
+        peso : "Mi peso corporal",
+        descanso: "sin descanso",
+        link : "https://xuanlanyoga.com/baddha-konasana/"
+    }
+    ]
+};
+
+
+>>>>>>> rutinas
 
 // funcion para cargar los ejercicios en la tabla correspondiente
 function cargarEjercicios (idTabla, ejercicios) {
@@ -103,6 +182,7 @@ function cargarEjercicios (idTabla, ejercicios) {
 
 //cargar los ejercicios en las tablas al cargar la pagina
 document.getElementById('lunes-tab').addEventListener('click', () => {
+<<<<<<< HEAD
     cargarEjercicios('cardio-exercises', ejerciciosLunes.cardio);
     cargarEjercicios('lumbares-exercises', ejerciciosLunes.lumbares);
     cargarEjercicios('flexibility-exercises', ejerciciosLunes.flexibilidad);
@@ -111,3 +191,24 @@ document.getElementById('lunes-tab').addEventListener('click', () => {
 document.getElementById('marted-tab').addEventListener('click',() =>  {
     cargarEjercicios('')
 })
+=======
+    cargarEjercicios('table1', ejerciciosLunes.cardio);
+    cargarEjercicios('table2', ejerciciosLunes.lumbares);
+    cargarEjercicios('table3', ejerciciosLunes.flexibilidad);
+});
+
+document.getElementById('martes-tab').addEventListener('click',() =>  {
+    cargarEjercicios('table1', ejerciciosMartes.abdomen);
+    cargarEjercicios('table2', ejerciciosMartes.flexibilidadLumbares);
+    cargarEjercicios('table3', ejerciciosMartes.estiramientosGenerales);
+});
+
+
+/*          ejercicio: ,
+            series: , 
+            repeticiones: ,
+            peso: , 
+            descanso: , 
+            link:  ,
+            */
+>>>>>>> rutinas
