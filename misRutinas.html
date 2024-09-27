@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi rutina semanal</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -15,5 +15,87 @@
             <a href="index.html" class="header_nav_a" >Inicio</a>
         </nav>
     </header>
+    <main class="main">
+        <section class="routine_section">
+            <h2 class="routine_title">Rutina nocturna</h2>
+            <p class="routine_description">Esta rutina tiene un enfoque alterno para mejorar la resistencia y nivel cardiovascular en unos días,
+                 y en otros días enfocar más la quema de grasa. A continuación verás el esquema dividido:</p>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="lunes-tab" data-bs-toggle="tab" data-bs-target="#lunes" type="button" role="tab">Lunes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="martes-tab" data-bs-toggle="tab" data-bs-target="#miercoles" type="button" role="tab">Martes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="miercoles_tab" data-bs-toggle="tab" data-bs-target="#miercoles" type="button" role="tab">Miercoles</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="jueves_tab" data-bs-toggle="tab" data-bs-target="#jueves" type="button" role="tab">Jueves</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="viernes_tab" data-bs-toggle="tab" data-bs-target="#viernes" type="button" role="tab">Viernes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="sabado_tab" data-bs-toggle="tab" data-bs-target="#sabado" type="button" role="tab">Sabado</button>
+                </li>
+            </ul>
+              <!-- Contenido de la rutina -->
+            <div class="tab-content" id="myTabContent">
+                <h3>Cardio (resistencia cardiovascular)</h3>
+                <table class="table table-dark table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Ejercicios</th>
+                            <th>Series</th>
+                            <th>Repeticiones</th>
+                            <th>Peso</th>
+                            <th>Descanso</th>
+                            <th>Datos sobre el ejercicio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cardio-exercises"></tbody>
+                     <!-- Los ejercicios de cardio se cargarán dinámicamente con JavaScript -->
+                </table>   
+                <h3>Fortalecimiento de lumbares</h3>
+                <table class="table table-dark table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Ejercicios</th>
+                            <th>Series</th>
+                            <th>Repeticiones</th>
+                            <th>Peso</th>
+                            <th>Descanso</th>
+                            <th>Datos sobre el ejercicio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lumbares-exercises"></tbody>
+                     <!-- Los ejercicios  se cargarán dinámicamente con JavaScript -->
+                </table>
+                <h3>Estiramientos y flexibilidad</h3>
+                <table class="table table-dark table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Ejercicios</th>
+                            <th>Series</th>
+                            <th>Repeticiones</th>
+                            <th>Peso</th>
+                            <th>Descanso</th>
+                            <th>Datos sobre el ejercicio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="flexibility-exercises"></tbody>
+                </table>
+            </div>
+
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 RagnarokOlympus. Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
