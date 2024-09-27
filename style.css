@@ -92,3 +92,91 @@ color: #f0f0f0;
 }
 /*Personalizando misRutinas.html*/
 
+.routine_section {
+    padding: 40px; /*este es el alto  del contenedor osea de arriba abajo*/
+    background-color: #1d1d1d;
+    border-radius: 10px; /*borde redondeado*/
+    margin: 20px auto; /*es la dintancia de este contenedor con los demas*/
+    width: 90%; /*este es el ancho del contenedor, osea de izquierda a derecha*/
+}
+.routine_title {
+    font-size: 2rem;
+    text-align: center; /*centra el texto al largo del contenedor*/
+    color: #ffcc00;
+
+}
+.routine_description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+.nav-tabs .nav-link {
+    background-color: #0b3c5d;
+    color: #fff;
+    margin-right: 5px; /* la distancia horizontal de cada boton*/
+}
+.nav-tabs .nav-link.active {
+    background-color: #ffcc00;
+    color: #000;
+}
+.tab-content {
+    background-color: #333;
+    padding: 20px; /*crea un margen de 20px alrededor del contendor*/
+    border-radius: 10px;
+    color: #fff;
+}
+.table {
+    width: 100%;  /* Esta propiedad establece que la tabla ocupe el 100% del ancho de su contenedor. */
+    margin: 20px 0; /* Esta propiedad añade un margen de 20 píxeles en la parte superior e inferior de la tabla, creando espacio alrededor de ella. */
+    border-collapse: collapse; /*elimina el espaciado entre celdas*/
+    background-color: #2b2b2b; /*Color de fondo de la tabla*/
+    border-radius: 10px;/*borde redondeado*/
+    overflow: hidden; /*mantener borde rendondeado*/
+} 
+.table th {
+    background-color: #ffcc00; /*color de fondo del encabezado*/
+    color: #000;
+    padding: 15px; /*espacio entre las celdas*/
+    text-align: center;
+}
+.table-dark {
+    background-color: #333; /*establece el fondo oscuro para la tabla*/
+    border-color: #444; /*establece el color del borde de la tabla*/
+    border-bottom: 3px solid #444; /*borde grueso  y color*/
+    font-size: 1.1rem; /*tamaño de letra*/
+    text-transform: uppercase; /*todas en mayusculas*/
+}
+/*Estilo para las filas alternas*/
+.table tr:nth-child(even){
+    background-color: #333;/* fondo más claro para filas impares */
+}
+.table tr:nth-child(odd) {
+    background-color: #3a3a3a; /* fondo más claro para filas impares */
+}
+/*efecto hover para als filas*/
+.table tr:hover {
+    background-color: #444; /*Cambio del color con el cursor por encima*/
+}
+/* Estilo para las celdas */
+.table td {
+    padding: 12px; /* más espacio en las celdas para mejor legibilidad */
+    color: #fff; /* texto blanco */
+    border-bottom: 1px solid #444; /* borde más fino entre celdas */
+    text-align: center;
+}
+/* Estilo del enlace "Click Aquí" */
+.table td a {
+    color: #ffcc00; /* color del enlace */
+    font-weight: bold; /* enlace en negrita */
+    text-decoration: none; /* elimina el subrayado */
+}
+.table td a:hover {
+    color: #ffc107; /* color más claro cuando se pasa el cursor */
+    text-decoration: underline; /* añade subrayado al pasar el cursor */
+}
+/* Tabla Bordeada */
+.table-bordered {
+    border: 2px solid #555; /* un borde más grueso y oscuro */
+    border-radius: 10px; /* bordes redondeados */
+}
