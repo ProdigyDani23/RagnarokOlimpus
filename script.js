@@ -68,21 +68,6 @@ const ejerciciosLunes = {
             link: "https://www.entrenamientos.com/ejercicios/estiramiento-de-flexores-de-cadera"
         }
     ]
-<<<<<<< HEAD
-}
-
-const ejerciciosMartes =  {
-    cardio : 
-        [{
-            ejercicio : "Saltos con cuerda",
-            series : 1,
-            repeticiones : "12 minutos (40 segundos de salto)",
-            peso : "Mi peso corporal",
-            descanso: "20 segundos",
-            link : "https://mundoentrenamiento.com/evidencias-sobre-el-salto-a-la-comba/"
-        }]
-}
-=======
 };
 
 const ejerciciosMartes =  {
@@ -159,7 +144,6 @@ const ejerciciosMartes =  {
 };
 
 
->>>>>>> rutinas
 
 // funcion para cargar los ejercicios en la tabla correspondiente
 function cargarEjercicios (idTabla, ejercicios) {
@@ -182,16 +166,6 @@ function cargarEjercicios (idTabla, ejercicios) {
 
 //cargar los ejercicios en las tablas al cargar la pagina
 document.getElementById('lunes-tab').addEventListener('click', () => {
-<<<<<<< HEAD
-    cargarEjercicios('cardio-exercises', ejerciciosLunes.cardio);
-    cargarEjercicios('lumbares-exercises', ejerciciosLunes.lumbares);
-    cargarEjercicios('flexibility-exercises', ejerciciosLunes.flexibilidad);
-});
-
-document.getElementById('marted-tab').addEventListener('click',() =>  {
-    cargarEjercicios('')
-})
-=======
     cargarEjercicios('table1', ejerciciosLunes.cardio);
     cargarEjercicios('table2', ejerciciosLunes.lumbares);
     cargarEjercicios('table3', ejerciciosLunes.flexibilidad);
@@ -211,4 +185,3 @@ document.getElementById('martes-tab').addEventListener('click',() =>  {
             descanso: , 
             link:  ,
             */
->>>>>>> rutinas
