@@ -68,7 +68,7 @@ const ejerciciosLunes = {
             link: "https://www.entrenamientos.com/ejercicios/estiramiento-de-flexores-de-cadera"
         }
     ]
-};
+}
 
 const ejerciciosMartes =  {
     abdomen : 
@@ -141,7 +141,7 @@ const ejerciciosMartes =  {
         link : "https://xuanlanyoga.com/baddha-konasana/"
     }
     ]
-};
+}
 
 
 
