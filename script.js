@@ -123,13 +123,84 @@ const routineData = {
         ],
         lumbares: [
             {
-
+                ejercicio: "Estiramiento del gato-camello",
+                series: "4",
+                repeticiones:"45 segundos",
+                peso:"-",
+                descanso:"sin descanso",
+                link:"https://www.cigna.com/es-us/knowledge-center/hw/gato-camello-abk4473"
             },
             {
-                
+                ejercicio:"Flexión lumbar tumbado (rodillas al pecho)",
+                series:"4",
+                repeticiones:"45 segundos ",
+                peso:"-",
+                descanso: "sin descanso",
+                link:"https://www.cigna.com/es-us/knowledge-center/hw/ejercicio-de-rodillas-al-pecho-sig44113 "
+            }
+        ],
+        estiramientos: [
+            {
+                ejercicio:"Estiramiento de la espalda baja en postura del niño",
+                series:"3",
+                repeticiones:"1 minuto",
+                peso:"-",
+                descanso:"sin descanso",
+                link:"https://www.mayoclinic.org/es/healthy-lifestyle/stress-management/multimedia/childs-pose/vid-20453580 "
+            },
+            {
+                ejercicio:"Estiramiento de caderas y glúteos (posición de mariposa)",
+                series:"3",
+                repeticiones:"45 segundos",
+                peso:"-",
+                descanso:"sin descanso",
+                link:"https://xuanlanyoga.com/baddha-konasana/"
             }
         ]
     },
+    webnesday : {
+        title1:"Cardio (Quema de Grasa)",
+        title2:"Circuito HIIT (5 rondas)",
+        title3:"Estiramientos y Flexibilidad",
+        part1 :  [
+            {
+                ejercicio:"Cuerda",
+                series:"1",
+                repeticiones: "7 minutos de calentamiento",
+                peso: "-",
+                descanso:"sin descanso",
+                link:"https://mundoentrenamiento.com/evidencias-sobre-el-salto-a-la-comba/"
+            }
+        ],
+        circuit: [
+            {
+                ejercicio:"Burpees",
+                series: "1",
+                repeticiones: "20 segundos",
+                peso:"-",
+                descanso:"sin descanso",
+                link:"pendiente"
+            },
+            {
+                ejercicio:"Jump Squats",
+                series:"1",
+                repeticiones: "20 segundos",
+                peso:"-",
+                descanso:"sin descanso",
+                link:"pendiente"
+            },
+            {
+                ejercicio:"Mountain climbers",
+                series:"1",
+                repeticiones:"20 segundos",
+                peso:"-",
+                descanso:"1 minuto",
+                link:"pendiente"
+            }
+
+        ]
+       
+    }
 
 };
 
@@ -172,18 +243,13 @@ document.getElementById('martes-tab').addEventListener('click', () => {
     cargarTitulos('tuesday');
     cargarEjercicios('table1', routineData.tuesday.abdomen);
     cargarEjercicios('table2', routineData.tuesday.lumbares);
-    
-    
-    
+    cargarEjercicios('table3', routineData.tuesday.estiramientos);
 });
 
+document.getElementById('miercoles-tab').addEventListener('click', () =>{
+    cargarTitulos('webnesday');
+    cargarEjercicios('table1', routineData.webnesday.part1);
+    cargarEjercicios('table2', routineData.webnesday.circuit);
+})
 
-/*              ejercicio: "  ", 
-                series: "", 
-                repeticiones: "",
-                peso: "-",
-                descanso: " ", 
-                link: ""
-                
-                
-                */
+
