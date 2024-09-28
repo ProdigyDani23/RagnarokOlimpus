@@ -1,8 +1,8 @@
 const routineData = {
     monday: {
-        Title1: "Cardio (Resistencia Cardiovascular)",
-        Title2: "Fortalecimiento de Lumbares",
-        Title3: "Estiramientos y Flexibilidad",
+        title1: "Cardio (Resistencia Cardiovascular)",
+        title2: "Fortalecimiento de Lumbares",
+        title3: "Estiramientos y Flexibilidad",
         cardio: [
             {    ejercicio: "Saltos con cuerda", 
                  series: "1", 
@@ -84,9 +84,9 @@ const routineData = {
 
     },
     tuesday :{
-        Title1 : "Abdomen (Máquina y Rueda Abdominal)",
+        title1 : "Abdomen (Máquina y Rueda Abdominal)",
         title2 :"Flexibilidad para Lumbares",
-        title3: "Estiramientos Generales",
+        title3 : "Estiramientos Generales",
         abdomen : [
             {
                 ejercicio: "Abs Coaster",
@@ -135,9 +135,9 @@ const routineData = {
 
 // Función para cargar los títulos desde los datos del objeto routineData
 function cargarTitulos(dia) {
-    document.getElementById('title1').textContent = routineData[dia].Title1;
-    document.getElementById('title2').textContent = routineData[dia].Title2;
-    document.getElementById('title3').textContent = routineData[dia].Title3;
+    document.getElementById('title1').textContent = routineData[dia].title1;
+    document.getElementById('title2').textContent = routineData[dia].title2;
+    document.getElementById('title3').textContent = routineData[dia].title3;
 }
 
 // Función para cargar los ejercicios en las tablas correspondientes
@@ -171,7 +171,9 @@ document.getElementById('lunes-tab').addEventListener('click', () => {
 document.getElementById('martes-tab').addEventListener('click', () => {
     cargarTitulos('tuesday');
     cargarEjercicios('table1', routineData.tuesday.abdomen);
-    //cargarEjercicios('table2', routineData.tuesday.abdomen)
+    cargarEjercicios('table2', routineData.tuesday.lumbares);
+    
+    
     
 });
 
