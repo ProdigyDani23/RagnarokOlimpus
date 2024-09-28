@@ -37,7 +37,7 @@ const ejerciciosLunes = {
        { ejercicio:" Bird-Dog" ,
         series: 4,
         repeticiones: 12,
-        peso: "Ki peso corporal",
+        peso: "Mi peso corporal",
         descanso: "30 segundos",
         link: "https://www.elmundo.es/yodona/vida-saludable/2024/08/19/669f8889e4d4d8f2058b458c.html"
     }
@@ -177,10 +177,6 @@ document.getElementById('martes-tab').addEventListener('click',() =>  {
     cargarEjercicios('table3', ejerciciosMartes.estiramientosGenerales);
 });
 
-
-/*          ejercicio: ,
-            series: , 
-            repeticiones: ,
             peso: , 
             descanso: , 
             link:  ,
