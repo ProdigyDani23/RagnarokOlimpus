@@ -43,7 +43,7 @@ const routineData = {
                 repeticiones: "12 repeticiones",
                 peso: "-",
                 descanso: " 30 segundos", 
-                link: "https://www.elmundo.es/yodona/vida-saludable/2024/08/19/669f8889e4d4d8f2058b458c.html"
+                link: "https://www.youtube.com/watch?v=ly5bDJC3OJ0&ab_channel=DavidPintos"
             }
         ],
         estiramiento: [
@@ -69,7 +69,7 @@ const routineData = {
                 repeticiones: "45 segundos por lado",
                 peso: "-",
                 descanso: " sin descanso", 
-                link: "https://www.entrenamientos.com/ejercicios/estiramiento-de-flexores-de-cadera"
+                link: "https://www.youtube.com/watch?v=3vnKWdqLTB4&ab_channel=BCNTraining"
             },
             {
                 ejercicio: "Corregir hombros caidos",
@@ -102,7 +102,7 @@ const routineData = {
                 repeticiones: "15 repeticiones",
                 peso: "-",
                 descanso: "45 segundos",
-                link: "https://www.entrenamientos.com/ejercicios/abdominales-con-roller"
+                link: "https://www.youtube.com/watch?v=zaCpg4aJY9U&ab_channel=POWERHIITTV"
             },
             {
                 ejercicio: "Plancha frontal",
@@ -110,7 +110,7 @@ const routineData = {
                 repeticiones: "mantener 1 minuto",
                 peso: "-",
                 descanso: "30 segundos",
-                link: "https://www.entrenamientos.com/ejercicios/plancha-con-apoyo-de-antebrazos"
+                link: "https://www.youtube.com/watch?v=TnsqBqlwSxg&ab_channel=JavierGim%C3%A9nez"
             },
             {
                 ejercicio: "plancha lateral",
@@ -118,7 +118,7 @@ const routineData = {
                 repeticiones: "mantener 45 segundos por lado",
                 peso: "-",
                 descanso: "30 segundos",
-                link:"https://www.entrenamientos.com/ejercicios/plancha-lateral-con-apoyo-de-antebrazo  "
+                link:"https://www.youtube.com/watch?v=bRivOELQVOs&ab_channel=StrongRunner  "
             }
         ],
         lumbares: [
@@ -250,7 +250,7 @@ const routineData = {
                 repeticiones:"15 repeticiones",
                 peso:"-",
                 descanso:"30-45 segundos",
-                link:"https://www.entrenamientos.com/ejercicios/abdominales-con-roller"
+                link:"https://www.youtube.com/watch?v=zaCpg4aJY9U&ab_channel=POWERHIITTV"
             },
             {
                 ejercicio:"Plancha Lateral con Rotación",
@@ -268,9 +268,113 @@ const routineData = {
                 descanso:"30-45 segundos",
                 link:"https://www.myprotein.es/thezone/entrenamiento/plancha-invertida-isometrica/"
             }
+        ],
+        fortalecimiento: [
+            {
+                ejercicio: "Hip thrust en suelo",
+                series:"4",
+                repeticiones:"20 repeticiones",
+                peso:"-",
+                descanso:"45 segundos",
+                link:"https://www.facebook.com/watch/?v=519673402274256"
+            },
+            {
+                ejercicio:"Extensiones lumbares en el suelo",
+                series:"4",
+                repeticiones:"15 repeticiones",
+                peso:"-",
+                descanso:"45 segundos",
+                link:"https://www.youtube.com/watch?v=RoW3MpEMDf4&ab_channel=Cl%C3%ADnicaCEMTRO"
+            }
+        ],
+        estiramiento: [
+            {
+                ejercicio: "Estiramiento del psoas",
+                series:"3",
+                repeticiones:"45 segundos por pierna",
+                peso:"-",
+                descanso:"sin descanso",
+                link:"https://www.youtube.com/watch?v=qK6kWA-KE-0"
+            },
+            {
+                ejercicio:"Flexión lateral del tronco de pie",
+                series:"3",
+                repeticiones:"45 segundos por lado",
+                peso:"-",
+                descanso:"sin descanso",
+                link:"https://www.youtube.com/watch?v=6QbI9mUBiYU&ab_channel=EjerciciosenCasa"
+            }
         ]
 
     },
+    saturday :{
+        title1:"Cardio (Mejorar Resistencia y Quema de Grasa)",
+        title2:"Estiramientos y Flexibilidad",
+        title3:"",
+        saltos: [
+            {
+                ejercicio:"saltos con cuerda",
+                series:"10",
+                repeticiones:"1 minuto de salto",
+                peso:"-",
+                descanso:"30-40 segundos",
+                link:"https://mundoentrenamiento.com/evidencias-sobre-el-salto-a-la-comba/"
+            },
+            {
+                ejercicio:"burpees",
+                series:"4",
+                repeticiones:"15",
+                peso:"-",
+                descanso:"30-40 segundos",
+                link:"https://mundoentrenamiento.com/burpee-dice-la-ciencia/"
+            },
+            {
+                ejercicio:"Jumping Jacks",
+                series:"4",
+                repeticiones:"45 segundos",
+                peso:"-",
+                descanso:"30-40 segundos",
+                link:"https://www.youtube.com/watch?v=QBqwvDdw7dQ"
+            }
+        ],
+        estiramientos: [
+            {
+                ejercicio:"Postura del perro mirando hacia abajo",
+                series:"3",
+                repeticiones:"1 minuto",
+                peso:"-",
+                descanso:"sin descanso",
+                link:"https://www.youtube.com/watch?v=y97pcs8w5xc&ab_channel=DeportesUncomo"
+            },
+            {
+                ejercicio:"Postura del Puente",
+                series:"3",
+                repeticiones:"1 minuto",
+                peso:"-",
+                descanso:"sin descanso",
+                link:"https://www.facebook.com/reel/512788491686669"
+            },
+            {
+                ejercicio:"Estiramiento de los cuádriceps",
+                series:"3",
+                repeticiones:"45 segundos por pierna",
+                peso:"-",
+                descanso:"sin descanso",
+                link:"https://www.mundodeportivo.com/uncomo/deporte/articulo/como-estirar-los-cuadriceps-50172.html"
+            }
+        ],
+        nada: [
+            {
+                ejercicio:"",
+                series:"",
+                repeticiones:"",
+                peso:"",
+                descanso:""
+            }
+        ]
+        
+
+    }
 };
 
 // Función para cargar los títulos desde los datos del objeto routineData
@@ -332,4 +436,13 @@ cargarEjercicios('table3', routineData.thursday.descanso);
 document.getElementById('viernes-tab').addEventListener('click', () => {
 cargarTitulos('friday');
 cargarEjercicios('table1', routineData.friday.abdomen);
+cargarEjercicios('table2',routineData.friday.fortalecimiento);
+cargarEjercicios('table3', routineData.friday.estiramiento);
 });
+
+document.getElementById('sabado-tab').addEventListener('click', () => {
+    cargarTitulos('saturday');
+    cargarEjercicios('table1', routineData.saturday.saltos);
+    cargarEjercicios('table2', routineData.saturday.estiramientos);
+    cargarEjercicios('table3',routineData.saturday.nada)
+})
