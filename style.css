@@ -3,11 +3,11 @@
 /*Personalizacion Index.html*/
 
 body {
-    font-family: 'Poppins' sans-serif;
-    background-color: #222 ;
-    color: #f0f0f0;
-    margin: 0; /*No hay margen*/
-    padding: 0;/*No hay relleno*/
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
     }
 .header {
     background-color: #0b3c5d;
@@ -63,16 +63,20 @@ body {
     gap: 15px; /*es la distancia horizontal de cada elemento*/
 }
 .main_div_a {
-    background-color: #ffc107; /*color de fondo del enlace*/
-    color: #1a1a1a; /*color del texto del enlace*/
-    padding: 10px 20px; /*este es el tamaño del bordem 10 pixeles de arriba abajo y 20 pixeles de izquierda a derecha*/
-    border-radius: 5px; /*este es el borde del enlace, para que no se vea tan cuadrado*/
-    text-decoration: none; /*quita el subrayado a el enlace*/
-    font-weight: 600; /*grosor de la letra*/
+    background-color: #ffc107;
+    color: #1a1a1a;
+    padding: 15px 30px; /* Aumenta el padding para que sean más grandes */
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 .main_div_a:hover {
-    background-color: #e0a800;
-    transition: 0.3s; /*el tiempo que demora en ver el color, se llama transicion*/
+    background-color: #e6a700; /* Efecto hover en botones */
+    color: #fff;
 }
 .main_img {
     display: block; /*este elemento es un bloque*/
@@ -83,12 +87,15 @@ body {
 }
 .footer {
     background-color: #001f3f;
-    padding: 20px; /*tamaño del contenedor */
-    text-align: center; /*pone los elemtos hijos en el centro*/
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem; /* Reduce el tamaño de letra del footer */
+    color: #fff;
 }
 .footer p {
-margin: 0;
-color: #f0f0f0;
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: bold;
 }
 /*Personalizando misRutinas.html*/
 
@@ -103,6 +110,7 @@ color: #f0f0f0;
     font-size: 2rem;
     text-align: center; /*centra el texto al largo del contenedor*/
     color: #ffcc00;
+    font-family: 'Cinzel', serif ;
 
 }
 .routine_description {
@@ -127,18 +135,19 @@ color: #f0f0f0;
     color: #fff;
 }
 .table {
-    width: 100%;  /* Esta propiedad establece que la tabla ocupe el 100% del ancho de su contenedor. */
-    margin: 20px 0; /* Esta propiedad añade un margen de 20 píxeles en la parte superior e inferior de la tabla, creando espacio alrededor de ella. */
-    border-collapse: collapse; /*elimina el espaciado entre celdas*/
-    background-color: #2b2b2b; /*Color de fondo de la tabla*/
-    border-radius: 10px;/*borde redondeado*/
-    overflow: hidden; /*mantener borde rendondeado*/
+    width: 80%; /* Ajusta el ancho de la tabla */
+    margin: 20px auto; /* Centra la tabla */
+    border-collapse: collapse;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra */
 } 
 .table th {
-    background-color: #ffcc00; /*color de fondo del encabezado*/
-    color: #000;
-    padding: 15px; /*espacio entre las celdas*/
-    text-align: center;
+    background-color: #333; /* Fondo más oscuro para el encabezado */
+    color: #ffc107;
+    font-size: 18px;
+    text-align: center; /* Centrar encabezado */
 }
 .table-dark {
     background-color: #333; /*establece el fondo oscuro para la tabla*/
@@ -156,13 +165,11 @@ color: #f0f0f0;
 }
 /*efecto hover para als filas*/
 .table tr:hover {
-    background-color: #444; /*Cambio del color con el cursor por encima*/
+    background-color: #555; /*Cambio del color con el cursor por encima*/
 }
 /* Estilo para las celdas */
 .table td {
-    padding: 12px; /* más espacio en las celdas para mejor legibilidad */
-    color: #fff; /* texto blanco */
-    border-bottom: 1px solid #444; /* borde más fino entre celdas */
+    font-size: 16px;
    
 }
 /* Estilo del enlace "Click Aquí" */
@@ -181,6 +188,96 @@ color: #f0f0f0;
     border-radius: 10px; /* bordes redondeados */
 }
 
-h3 {
+h1, h2, h3 {
+    font-weight: bold;
     text-align: center;
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .table, .container {
+        width: 100%; /* La tabla ocupará el 100% en pantallas pequeñas */
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .table th, .table td {
+        padding: 10px 15px;
+        font-size: 14px; /* Texto más pequeño en móviles */
+    }
+
+    .main_div_a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Colocarlo sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto; /* Centrado vertical y horizontal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 400px; /* Máximo ancho */
+    text-align: center; /* Centrar el texto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

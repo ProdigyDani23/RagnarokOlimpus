@@ -403,6 +403,15 @@ function cargarEjercicios(idTabla, ejercicios) {
     });
 }
 
+    // Cargar la rutina del lunes al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+        // Aquí cargamos la rutina del lunes automáticamente
+        cargarTitulos('monday');
+        cargarEjercicios('table1', routineData.monday.cardio);
+        cargarEjercicios('table2', routineData.monday.lumbares);
+        cargarEjercicios('table3', routineData.monday.estiramiento);
+    });
+
 // Cargar los datos de la rutina del lunes al cargar la página
 document.getElementById('lunes-tab').addEventListener('click', () => {
     cargarTitulos('monday');
@@ -859,6 +868,12 @@ const routineGym = {
 function cargarTitulos2(dia) {
     document.getElementById('titleGym1').textContent = routineGym[dia].titleGym1;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    cargarTitulos2('mondayGym');
+    cargarEjercicios('tableGym1', routineGym.mondayGym.routine1);
+});
+
 document.getElementById('gymLunes-tab').addEventListener('click', () =>{
     cargarTitulos2('mondayGym');
     cargarEjercicios('tableGym1', routineGym.mondayGym.routine1);
@@ -870,7 +885,7 @@ document.getElementById('gymMartes-tab').addEventListener('click', () =>{
 });
 
 document.getElementById('gymMiercoles-tab').addEventListener('click', () =>{
-    cargarTitulos2('saturdayGym');
+    cargarTitulos2('Wednesday');
     cargarEjercicios('tableGym1', routineGym.Wednesday.routine3);
 });
 
@@ -893,3 +908,6 @@ document.getElementById('gymDomingo-tab').addEventListener('click', () =>{
     cargarTitulos2('sundayGym');
     cargarEjercicios('tableGym1', routineGym.sundayGym.routine7);
 });
+
+
+
