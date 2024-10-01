@@ -17,6 +17,52 @@
     </header>
     <main class="main">
         <section class="routine_section">
+            <h2 class="routine_title">Rutina gimnasio</h2>
+            <p class="routine_description">Esta rutina está diseñada específicamente para maximizar la hipertrofia muscular, 
+               y aplicando principios basados en la ciencia para optimizar los resultados. La estructura sigue un esquema de Push-Pull-Legs (PPL).</p>
+               <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="gymLunes-tab" data-bs-toggle="tab" data-bs-target="#lunes" type="button" role="tab">Lunes</button>
+                </li>
+                <li class=" nav-item" role="presentation">
+                    <button class="nav-link" id="gymMartes-tab" data-bs-toggle="tab" data-bs-target="#martes" type="button" role="tab">Martes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="gymMiercoles-tab" data-bs-toggle="tab" data-bs-target="#miercoles" type="button" role="tab">Miercoles</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="gymJueves-tab" data-bs-toggle="tab" data-bs-target="#jueves" type="button" role="tab">Jueves</button>
+                </li>
+                <li class=" nav-item" role="presentation">
+                    <button class="nav-link" id="gymViernes-tab" data-bs-toggle="tab" data-bs-target="#viernes" type="button" role="tab">Viernes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="gymSabado-tab" data-bs-toggle="tab" data-bs-target="#sabado" type="button" role="tab">Sabado</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="gymDomingo-tab" data-bs-toggle="tab" data-bs-target="#domingo" type="button" role="tab">Domingo</button>
+                </li>
+               </ul>
+               <!--COntenido de las rutinas-->
+               <div class="tab-content" id="myTabContent">
+                <h3 id="titleGym1"></h3>
+                <table class="table table-dark table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Ejercicios</th>
+                            <th>Series</th>
+                            <th>Repeticiones</th>
+                            <th>Peso</th>
+                            <th>Descanso</th>
+                            <th>Datos sobre el ejercicio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableGym1"></tbody>
+                </table>
+               </div>
+        </section>
+
+        <section class="routine_section">
             <h2 class="routine_title">Rutina nocturna</h2>
             <p class="routine_description">Esta rutina tiene un enfoque alterno para mejorar la resistencia y nivel cardiovascular en unos días,
                  y en otros días enfocar más la quema de grasa. A continuación verás el esquema dividido:</p>
@@ -87,8 +133,6 @@
                     <tbody id="table3"></tbody>
                 </table>
             </div>
-
-
         </section>
     </main>
     <footer class="footer">

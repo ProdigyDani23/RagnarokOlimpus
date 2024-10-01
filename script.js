@@ -444,5 +444,452 @@ document.getElementById('sabado-tab').addEventListener('click', () => {
     cargarTitulos('saturday');
     cargarEjercicios('table1', routineData.saturday.saltos);
     cargarEjercicios('table2', routineData.saturday.estiramientos);
-    cargarEjercicios('table3',routineData.saturday.nada)
-})
+    cargarEjercicios('table3',routineData.saturday.nada);
+});
+
+const routineGym = {
+    mondayGym: {
+     titleGym1: "Pecho, Hombros, Triceps",
+     routine1: [
+        {
+            ejercicio: "1. Press de banca inclinado con mancuernas (Pecho)", 
+            series: "4", 
+            repeticiones: "8-12 ",
+            peso: "15 lb cada lado",
+            descanso: "90 segundos", 
+            link: "https://www.youtube.com/watch?v=9fy0A5xWsgk&ab_channel=DrV%C3%ADctorL%C3%B3pez" 
+       },
+       {
+        ejercicio: "2. Press militar con barra(Hombro)", 
+        series: "4", 
+        repeticiones: "8-12 ",
+        peso: "10 lb cada lado",
+        descanso: "90 segundos", 
+        link: "https://youtube.com/shorts/if97enQvM70?si=K0li9FXl3bI2B0bU" 
+       },
+       {
+        ejercicio: "3. Press de banca plano con mancuernas (Pecho)", 
+        series: "3", 
+        repeticiones: "8-12 ",
+        peso: "20 lb cada lado",
+        descanso: "90 segundos", 
+        link: "https://www.youtube.com/watch?v=G143DZ84R9g&ab_channel=MiguelLeonTrainer" 
+       },
+       {
+        ejercicio: "4. Elevaciones laterales con mancuernas (Hombro)", 
+        series: "3", 
+        repeticiones: "12-15",
+        peso: "10 lb cada lado",
+        descanso: "60 segundos", 
+        link: "https://youtube.com/shorts/DCS8eFTiddM?si=ylwYJNxPfr5aj9sn" 
+       },
+       {
+        ejercicio: "5. Fondos en paralelas (enfocados en pecho)", 
+        series: "3", 
+        repeticiones: "10-12 ",
+        peso: "-",
+        descanso: "90 segundos", 
+        link: "https://www.youtube.com/watch?v=vtEvQ-jHgfU&ab_channel=CalisteniaTraining" 
+       },
+       {
+        ejercicio: "6. Pájaros con mancuernas (deltoides posterior) (Hombro)", 
+        series: "3", 
+        repeticiones: "12-15 ",
+        peso: "10 lb cada lado",
+        descanso: "60 segundos", 
+        link: "https://www.youtube.com/watch?v=x2ZMZDP_TmY&ab_channel=FitKamp" 
+       },
+       {
+        ejercicio: "7. Fondos en paralelas (enfocados en tríceps) (Tríceps)", 
+        series: "3", 
+        repeticiones: "10-12 ",
+        peso: "-",
+        descanso: "90 segundos", 
+        link: "https://www.youtube.com/watch?v=vtEvQ-jHgfU&ab_channel=CalisteniaTraining" 
+       },
+       {
+        ejercicio: "8. Extensiones de tríceps en polea alta con cuerda (Tríceps)", 
+        series: "3", 
+        repeticiones: "12-15 ",
+        peso: "20 lb",
+        descanso: "60 segundos", 
+        link: "https://youtube.com/shorts/EWsq_UbGqPY?si=KnNTSnKJVWC6y2O4" 
+       }
+     ]
+    },
+    tuesdayGym: {
+        titleGym1:"Espalda, Biceps, Antebrazos",
+        routine2: [
+            {
+                ejercicio: "1. Dominadas (agarre pronado) (Espalda)", 
+                series: "4", 
+                repeticiones: "6-8",
+                peso: "-",
+                descanso: "90 segundos", 
+                link: "https://youtube.com/shorts/aTpef7EYmkk?si=ATwC1gs8oCPUIuSD" 
+           },
+           {
+            ejercicio: "2. Curl con barra Z (Bíceps)", 
+            series: "4", 
+            repeticiones: "8-12 ",
+            peso: "30 lb",
+            descanso: "90 segundos", 
+            link: "https://www.youtube.com/watch?v=b8nB33AAYJE&ab_channel=SportCityMexico" 
+           },
+           {
+            ejercicio: "3. Remo con máquina (Espalda)", 
+            series: "4", 
+            repeticiones: "8-12 ",
+            peso: "60 lb",
+            descanso: "90 segundos", 
+            link: "https://www.youtube.com/watch?v=Rb956D3Fhds&ab_channel=SportCityMexico" 
+           },
+           {
+            ejercicio: "4. Curl de bíceps inclinado con mancuerna (Bíceps)", 
+            series: "3", 
+            repeticiones: "8-12",
+            peso: "15 lb cada lado",
+            descanso: "90 segundos", 
+            link: "https://www.youtube.com/watch?v=ZY19YNmm7tQ&ab_channel=Powerexplosive" 
+           },
+           {
+            ejercicio: "5. Jalón al pecho con agarre ancho (polea alta) (Espalda)", 
+            series: "3", 
+            repeticiones: "8-12 ",
+            peso: "60 lb",
+            descanso: "90 segundos", 
+            link: "https://youtube.com/shorts/RD4t94XvKsU?si=M-Bt8Lmfz1gxePQ9" 
+           },
+           {
+            ejercicio: "6. Curl predicador con máquina asistida (Bíceps)", 
+            series: "3", 
+            repeticiones: "10-12 ",
+            peso: "20 lb ",
+            descanso: "60-90 segundos", 
+            link: "https://www.youtube.com/watch?v=ssjN2NJgX2A&ab_channel=KronFitness" 
+           },
+           {
+            ejercicio: "7. Curl inverso con barra Z (Antebrazo)", 
+            series: "3", 
+            repeticiones: "12-15 ",
+            peso: "-",
+            descanso: "60 segundos", 
+            link: "https://youtube.com/shorts/svosjAqIg-c?si=flkyNW2AN8dWTAOn" 
+           },
+           {
+            ejercicio: "8. curl de muñeca (antebrazo)", 
+            series: "3", 
+            repeticiones: "15",
+            peso: "15 lb",
+            descanso: "60 segundos", 
+            link: "https://www.youtube.com/watch?v=QVvNZR67-ns&ab_channel=EjerciciosenCasa" 
+           }
+        ]
+
+    },
+    Wednesday: {
+        titleGym1: "Piernas y Pantorrillas",
+        routine3: [
+            {
+                ejercicio: "1. Prensa de pierna horizontal (Cuádriceps, Glúteos)", 
+                series: "4", 
+                repeticiones: "8-12",
+                peso: "60 lb",
+                descanso: "90 segundos", 
+                link: "https://youtube.com/shorts/dmC_V7h3Xlg?si=3v1p-1hiQFNGJ-qx" 
+            },
+            {
+                ejercicio: "2. Sentadilla Goblet con mancuerna (Cuádriceps, Glúteos)", 
+                series: "4", 
+                repeticiones: "8-10",
+                peso: "45 lb",
+                descanso: "120 segundos", 
+                link: "https://youtube.com/shorts/2KbVt1Gl0VM?si=xz2hsBzbEHhDWxuj" 
+            },
+            {   
+                ejercicio: "3.  Sentadilla Búlgara con mancuernas (Cuádriceps, Glúteos, Isquiotibiales)", 
+                series: "3", 
+                repeticiones: "10-12 cada pierna",
+                peso: "20 lb cada lado",
+                descanso: "120 segundos", 
+                link: "https://youtube.com/shorts/73Wnj4XvqDY?si=Th1yDwjHG2KJx7Vj" 
+            },
+            {
+                ejercicio: "4. Zancadas caminando con mancuernas (Cuádriceps, Glúteos, Isquiotibiales)", 
+                series: "3", 
+                repeticiones: "10-12",
+                peso: "20 lb cada lado",
+                descanso: "120 segundos", 
+                link: "https://www.youtube.com/watch?v=XDeStrbE22E&ab_channel=TITANGYM" 
+            },
+            {
+                ejercicio: "5.  Elevación de talones en prensa (Pantorrillas) ", 
+                series: "4", 
+                repeticiones: "15",
+                peso: "45 lb cada lado",
+                descanso: "90 segundos", 
+                link: "https://youtube.com/shorts/JSlx0soZfys?si=vSe5jv_A_WtFrvVS" 
+            },
+            {
+                ejercicio: "6.  Elevación de talones sentado (Pantorrillas)", 
+                series: "4", 
+                repeticiones: "15 peso maximo - 15 mitad de peso",
+                peso: "45 lb cada lado",
+                descanso: "90 segundos", 
+                link: "https://youtube.com/shorts/RDLWmpc0suQ?si=TLw8AHMsKKzexyD7" 
+            }
+
+        ]
+    },
+    thursday : {
+        titleGym1: "Descanso",
+        routine4:  
+           [
+            { ejercicio: ". ", 
+            series: "", 
+            repeticiones: "",
+            peso: "",
+            descanso: "", 
+            link: "" 
+        }
+        ]
+        },
+    fridayGym: {
+        titleGym1: "Pecho, Hombros, Triceps",
+        routine5: [
+            
+           {
+               ejercicio: "1. Press de banca declinado con barra (Pecho)", 
+               series: "4", 
+               repeticiones: "8-12 ",
+               peso: "15 lb cada lado",
+               descanso: "90 segundos", 
+               link: "https://youtube.com/shorts/yvp6aGRMQoA?si=LmCk3-cl8Dm_dpAv" 
+          },
+          {
+           ejercicio: "2. Press Arnold con mancuernas (Hombro)", 
+           series: "4", 
+           repeticiones: "8-12 ",
+           peso: "10 lb cada lado",
+           descanso: "90 segundos", 
+           link: "https://www.youtube.com/watch?v=lqQuH5WwHRE&ab_channel=JaviNewBody" 
+          },
+          {
+           ejercicio: "3. Apertura con mancuernas en banco plano (Pecho)", 
+           series: "3", 
+           repeticiones: "10-12 ",
+           peso: "15 lb cada lado",
+           descanso: "90 segundos", 
+           link: "https://www.youtube.com/watch?v=fvwQLEsJzuw&ab_channel=sportizeme" 
+          },
+          {
+           ejercicio: "4. Elevaciones frontales con  mancuerna (Hombro)", 
+           series: "3", 
+           repeticiones: "12-15",
+           peso: "15 lb cada lado",
+           descanso: "60 segundos", 
+           link: "https://www.youtube.com/watch?v=O0n4ITO_288&ab_channel=ACREARTUMEJORVERSIONMF" 
+          },
+          {
+           ejercicio: "5. Encogimientos con mancuernas (trapecios) (Hombro)", 
+           series: "3", 
+           repeticiones: "12-15 ",
+           peso: "20 lb cada lado",
+           descanso: "60 segundos", 
+           link: "https://www.youtube.com/watch?v=1GqBjLscF7I&ab_channel=Italocalistenia" 
+          },
+          {
+           ejercicio: "6. Press cerrado en banca (con barra) (Tríceps)", 
+           series: "3", 
+           repeticiones: "8-12 ",
+           peso: "25 lb cada lado",
+           descanso: "90 segundos", 
+           link: "https://youtube.com/shorts/kCuB4PfbMPg?si=sc9qvGbs3SdYAAbx" 
+          },
+          {
+           ejercicio: "7. Kickbacks con mancuernas (patada de tríceps) (Tríceps)", 
+           series: "3", 
+           repeticiones: "12-15 ",
+           peso: "10 lb ",
+           descanso: "60 segundos", 
+           link: "https://www.youtube.com/watch?v=s5zO5l-GiJw&ab_channel=JorgeSoriaVirto" 
+          }
+        ]
+    },
+    saturdayGym: {
+        titleGym1:"Espalda, Biceps, Antebrazos",
+        routine6: [
+            {
+                ejercicio: "1. Dominadas (agarre supinado) (Espalda)", 
+                series: "4", 
+                repeticiones: "6-8",
+                peso: "-",
+                descanso: "90 segundos", 
+                link: "https://youtube.com/shorts/amSuLWswuI0?si=M1Fq99yvllD37ZPE" 
+           },
+           {
+            ejercicio: "2. Curl de bíceps tipo martillo con mancuernas (Bíceps)", 
+            series: "4", 
+            repeticiones: "8-12 ",
+            peso: "15 lb cada lado",
+            descanso: "90 segundos", 
+            link: "https://youtube.com/shorts/T0txYgZGKWU?si=5zED8qvno0l-5QvL" 
+           },
+           {
+            ejercicio: "3. Remo en máquina o polea baja (Espalda)", 
+            series: "4", 
+            repeticiones: "8-12 ",
+            peso: "60 lb",
+            descanso: "90 segundos", 
+            link: "https://www.youtube.com/watch?v=2672v_gWAuo&ab_channel=Be%C3%B1atUrrezola" 
+           },
+           {
+            ejercicio: "4. Curl concentrado con mancuerna (Bíceps)", 
+            series: "3", 
+            repeticiones: "10-12",
+            peso: "15 lb cada lado",
+            descanso: "90 segundos", 
+            link: "https://www.youtube.com/watch?v=8B0mY3gknoc&ab_channel=migimnasiotv" 
+           },
+           {
+            ejercicio: "5. Jalón con agarre supinado (polea alta) (Espalda)*", 
+            series: "3", 
+            repeticiones: "8-12 ",
+            peso: "75 lb",
+            descanso: "90 segundos", 
+            link: "https://www.youtube.com/watch?v=MYStIsnJgYE&ab_channel=Rom%C3%A9nRguez9" 
+           },
+           {
+            ejercicio: "6. 21s de bíceps (con barra) (Bíceps)", 
+            series: "3", 
+            repeticiones: "21 (7 mitad inferior, 7 mitad superior, 7 completas) ",
+            peso: "10 lb ",
+            descanso: "60-90 segundos", 
+            link: "https://www.youtube.com/watch?v=0AzOIeoJaRw&ab_channel=RodrigoBermejo" 
+           },
+           {
+            ejercicio: "7. validar nombre del otro ejercicio de antebrazo", 
+            series: "3", 
+            repeticiones: "12-15 ",
+            peso: "45 lb",
+            descanso: "60 segundos", 
+            link: "-" 
+           },
+           {
+            ejercicio: "8. Rotación de muñeca con mancuerna (Antebrazo)", 
+            series: "3", 
+            repeticiones: "15",
+            peso: "15 lb cada lado",
+            descanso: "60 segundos", 
+            link: "https://www.youtube.com/watch?v=JzegavlYrcc&ab_channel=PERFORMANCEMOVE" 
+           }
+        ]
+    },
+    sundayGym: {
+        titleGym1:"Piernas y pantorrillas",
+        routine7: [
+            {
+                ejercicio: "1. Puente de glúteos con maquina(Glúteos, Isquiotibiales)", 
+                series: "4", 
+                repeticiones: "10-12",
+                peso: "40 lb",
+                descanso: "120 segundos", 
+                link: "https://www.youtube.com/watch?v=2LKqiecERXw&ab_channel=activaclub" 
+            },
+            {
+                ejercicio: "2. Curl de pierna acostado en máquina (Isquiotibiales)", 
+                series: "4", 
+                repeticiones: "10-12",
+                peso: "75 lb",
+                descanso: "90 segundos", 
+                link: "https://youtube.com/shorts/ENDnSAkatcw?si=WrNaHfRnMYWObHYe" 
+            },
+            {
+                ejercicio: "3.  Curl de pierna sentado en máquina (Isquiotibiales)", 
+                series: "3", 
+                repeticiones: "10-12",
+                peso: "60 lb",
+                descanso: "90 segundos", 
+                link: "https://www.youtube.com/watch?v=83kUSgfAzaw&ab_channel=DrV%C3%ADctorL%C3%B3pez" 
+            },
+            {
+                ejercicio: "4. Sentadilla Pistol (Avanzada, Cuádriceps, Glúteos, Aductores, Abductores)", 
+                series: "3", 
+                repeticiones: "6-8 repeticiones por pierna",
+                peso: "-",
+                descanso: " 120 segundos", 
+                link: "https://youtube.com/shorts/Rsx36-Gg_Y4?si=UiFfsLSJgPR8YPPb" 
+            },
+            {
+                ejercicio: "5. Sentadilla Búlgara con mancuernas (Cuádriceps, Glúteos, Isquiotibiales)", 
+                series: "3", 
+                repeticiones: "10-12 repeticiones por pierna",
+                peso: "20 lb cada lado",
+                descanso: "120 segundos", 
+                link: "https://www.youtube.com/shorts/73Wnj4XvqDY" 
+            },
+            {
+                ejercicio: "6. Zancadas caminando con mancuernas (Cuádriceps, Glúteos, Isquiotibiales)", 
+                series: "3", 
+                repeticiones: "10-12 repeticiones ",
+                peso: "20 lb cada lado",
+                descanso: "120 segundos", 
+                link: "https://www.youtube.com/watch?v=XDeStrbE22E&ab_channel=TITANGYM" 
+            },
+            {
+                ejercicio: "7.  Elevación de talones en prensa (Pantorrillas) ", 
+                series: "4", 
+                repeticiones: "15",
+                peso: "45 lb cada lado",
+                descanso: "90 segundos", 
+                link: "https://youtube.com/shorts/JSlx0soZfys?si=vSe5jv_A_WtFrvVS" 
+            },
+            {
+                ejercicio: "8.  Elevación de talones sentado (Pantorrillas)", 
+                series: "4", 
+                repeticiones: "15 peso maximo - 15 mitad de peso",
+                peso: "45 lb cada lado",
+                descanso: "90 segundos", 
+                link: "https://youtube.com/shorts/RDLWmpc0suQ?si=TLw8AHMsKKzexyD7" 
+            }
+        ]
+    }
+    };
+
+function cargarTitulos2(dia) {
+    document.getElementById('titleGym1').textContent = routineGym[dia].titleGym1;
+}
+document.getElementById('gymLunes-tab').addEventListener('click', () =>{
+    cargarTitulos2('mondayGym');
+    cargarEjercicios('tableGym1', routineGym.mondayGym.routine1);
+});
+
+document.getElementById('gymMartes-tab').addEventListener('click', () =>{
+    cargarTitulos2('tuesdayGym');
+    cargarEjercicios('tableGym1', routineGym.tuesdayGym.routine2);
+});
+
+document.getElementById('gymMiercoles-tab').addEventListener('click', () =>{
+    cargarTitulos2('saturdayGym');
+    cargarEjercicios('tableGym1', routineGym.Wednesday.routine3);
+});
+
+document.getElementById('gymJueves-tab').addEventListener('click', () =>{
+    cargarTitulos2('thursday');
+    cargarEjercicios('tableGym1', routineGym.thursday.routine4);
+});
+
+document.getElementById('gymViernes-tab').addEventListener('click',() => {
+    cargarTitulos2('fridayGym');
+    cargarEjercicios('tableGym1', routineGym.fridayGym.routine5);
+});
+
+document.getElementById('gymSabado-tab').addEventListener('click', () =>{
+    cargarTitulos2('saturdayGym');
+    cargarEjercicios('tableGym1', routineGym.saturdayGym.routine6);
+});
+
+document.getElementById('gymDomingo-tab').addEventListener('click', () =>{
+    cargarTitulos2('sundayGym');
+    cargarEjercicios('tableGym1', routineGym.sundayGym.routine7);
+});

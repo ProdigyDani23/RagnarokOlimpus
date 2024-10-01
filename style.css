@@ -163,7 +163,7 @@ color: #f0f0f0;
     padding: 12px; /* más espacio en las celdas para mejor legibilidad */
     color: #fff; /* texto blanco */
     border-bottom: 1px solid #444; /* borde más fino entre celdas */
-    text-align: center;
+   
 }
 /* Estilo del enlace "Click Aquí" */
 .table td a {
