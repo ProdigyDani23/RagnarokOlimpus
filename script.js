@@ -911,3 +911,7 @@ document.getElementById('gymDomingo-tab').addEventListener('click', () =>{
 
 
 
+function showMaintenanceMessage(event) {
+    event.preventDefault(); // Evita que el enlace redirija
+    alert("En mantenimiento");
+}
